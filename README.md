@@ -19,3 +19,13 @@ USED THIRD-PARTY LIBRARIES
 * [Simple XML Serialization](http://simple.sourceforge.net/) – [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 * [Project Lombok](http://projectlombok.org/) – [MIT License](http://opensource.org/licenses/mit-license.php)
 * [dnsjava](http://www.xbill.org/dnsjava/) – [BSD license](http://www.xbill.org/dnsjava/dnsjava-current/LICENSE)
+
+
+
+# Sign
+jarsigner -verbose -keystore ../steedos-certs/android/android.keystore -signedjar app/build/outputs/apk/app-release-signed.apk app/build/outputs/apk/app-release-unsigned.apk android
+
+# Optimize
+rm SteedOS_DAVdroid_0.8.0.apk
+${ANDROID_HOME}/build-tools/22.0.1/zipalign -v 4 app/build/outputs/apk/app-release-signed.apk SteedOS_DAVdroid_0.8.0.apk
+

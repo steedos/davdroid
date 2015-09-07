@@ -39,7 +39,8 @@
             android:layout_width="0dp"
             android:scrollHorizontally="true"
             android:scrollbars="horizontal"
-            android:hint="my.webhost.com">
+            android:text="drive.steedos.com"
+            android:hint="drive.steedos.com">
             <requestFocus />
         </EditText>
 

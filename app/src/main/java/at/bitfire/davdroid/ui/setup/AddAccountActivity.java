@@ -32,7 +32,8 @@ public class AddAccountActivity extends Activity {
 		
 		if (savedInstanceState == null) {	// first call
 			getFragmentManager().beginTransaction()
-				.add(R.id.right_pane, new LoginTypeFragment())
+				//.add(R.id.right_pane, new LoginTypeFragment())
+				.add(R.id.right_pane, new LoginURLFragment())
 				.commit();
 		}
 	}

@@ -13,7 +13,7 @@ android {
     buildToolsVersion '22.0.1'
 
     defaultConfig {
-        applicationId "at.bitfire.davdroid"
+        applicationId "com.steedos.davdroid"
         minSdkVersion 14
         targetSdkVersion 22
     }
@@ -23,7 +23,7 @@ android {
             minifyEnabled false
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }

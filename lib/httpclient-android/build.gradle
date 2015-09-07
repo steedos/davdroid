@@ -145,13 +145,13 @@ android.libraryVariants.all { variant ->
         artifacts {
             dist createAndroidJar
             dist createAndroidSrcJar
-            dist createAndroidJavadocJar
+            //dist createAndroidJavadocJar
         }
 
         signing {
             sign createAndroidJar
             sign createAndroidSrcJar
-            sign createAndroidJavadocJar
+            //sign createAndroidJavadocJar
         }
 
         artifacts {
